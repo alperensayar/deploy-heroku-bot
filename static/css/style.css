@@ -303,12 +303,12 @@ input[type="submit"]{
 	cursor: pointer;
 }
 .chat_box{
-	width: 400px;
+	width: 350px;
 	height: 80vh;
 	position: fixed;
 	bottom: 100px;
 	right: 30px;
-	background:#dedede;
+	background:#dedede00;
 	z-index: 1000;
 	transition: all 0.3s ease-out;
 	transform: scaleY(0);
