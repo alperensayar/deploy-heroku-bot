@@ -30,7 +30,7 @@
                     <option value="Program">Program Details</option>
                     <option value="Career">Career Service</option>
                     <option value="Admission">Admission & Application</option>
-                    <option value="Admission">ELU Bachelor's Program</option>
+                    <option value="Elu">ELU Bachelor's Program</option>
 
                 </select>
                 <div data-conv-fork="first-question">
@@ -52,7 +52,181 @@
                         <input type="text" data-conv-question="Will I get a refund Cevap" data-no-answer="true">
                     </div>
                     </div>
+                     <div data-conv-case="Program">
+                    <select data-callback="storeState" data-conv-question="Please choose." name="Program Part">
+                        <option value="Program_1">Which skills will I acquire at the end of this program?</option>
+                        <option value="Program_2">How long is the program?</option>
+                        <option value="Program_3">Can I complete this program If I have a full-time job?</option>
+                        <option value="Program_4">What are the graduation criteria for this program</option>
+                        <option value="Program_5">Instructors</option>
+                        <option value="Program_6">Curriculum</option>
+                    </select>
+                </div>
+                    <div data-conv-fork="Program Part">
+                        <div data-conv-case="Program_1">
+                            <input type="text" name="Program_1"
+                                   data-conv-question="Which skills cevap"
+                                   data-no-answer="true">
 
+                        </div>
+                        <div data-conv-case="Program_2">
+                            <input type="text" name="Program_2"
+                                   data-conv-question="How long cevap."
+                                   data-no-answer="true">
+                        </div>
+                        <div data-conv-case="Program_3">
+                            <input type="text" name="Program_3"
+                                   data-conv-question="Can I complete cevap"
+                                   data-no-answer="true">
+                        </div>
+                        <div data-conv-case="Program_4">
+                            <input type="text" name="Program_4"
+                                   data-conv-question="What are the criteria cevap."
+                                   data-no-answer="true">
+                        </div>
+                        <div data-conv-case="Program_5">
+                            <input type="text" name="Program_5"
+                                   data-conv-question="Instructors cevap."
+                                   data-no-answer="true">
+                        </div>
+                        <div data-conv-case="Program_6">
+                            <select data-conv-question="Please choose." name="Program_6">
+                                <option value="Program_6_1">Can I see the detailed curriculum?</option>
+                                <option value="Program_6_2">What is the weekly schedule for this program?</option>
+                            </select>
+                        </div>
+                        <div data-conv-fork="Program_6">
+                            <div data-conv-case="Program_6_1">
+                                <input type="text" name="Program_6_1"
+                                       data-conv-question="Can I see the detailed curriculum cevap"
+                                       data-no-answer="true">
+                            </div>
+                            <div data-conv-case="Program_6_2">
+                                <input type="text" name="Program_6_2"
+                                       data-conv-question="What is the weekly schedule cevap"
+                                       data-no-answer="true">
+                            </div>
+                    </div>
+                </div>
+                    <div data-conv-case="Career">
+                    <select data-conv-question="Please choose." name="Career Part">
+                        <option value="Career_1">What kind of career opportunities will I have after I complete this
+                            program?
+                        </option>
+                    </select>
+                </div>
+                    <div data-conv-fork="Career Part">
+                        <div data-conv-case="Career_1">
+                            <input type="text" name="Career_1"
+                                   data-conv-question="What kind of career cevap."
+                                   data-no-answer="true">
+                        </div>
+                    </div>
+                        <div data-conv-case="Admission">
+                    <select data-conv-question="Please choose." name="Admission Part">
+                        <option value="Admission_1">What are the steps in the admissions process?</option>
+                        <option value="Admission_2">Am I eligible to apply?</option>
+                        <option value="Admission_3">How can I prepare for the admission process?</option>
+                    </select>
+                </div>
+                    <div data-conv-fork="Admission Part">
+                        <div data-conv-case="Admission_1">
+                            <input type="text" name="Admission_1"
+                                   data-conv-question="What are the steps cevap."
+                                   data-no-answer="true">
+                        </div>
+                        <div data-conv-case="Admission_2">
+                            <select data-conv-question="Are you woman" name="Admission_2">
+                                <option value="Admission_2_1">Yes</option>
+                                <option value="Admission_2_2">No</option>
+                            </select>
+                        </div>
+                            <div data-conv-fork="Admission_2">
+                                <div data-conv-case="Admission_2_1">
+                                    <select data-conv-question="Do you want to start your career in technology after this education?"
+                                            name="Admission_2_1">
+                                        <option value="Admission_2_1_1">Yes</option>
+                                        <option value="Admission_2_1_2">No</option>
+                                    </select>
+                                </div>
+                                <div data-conv-case="Admission_2_2">
+                                    <input type="text" name="Admission_2_2" data-conv-question="Hope to see you in another Up School Program. You can subscribe to our newsletter here(Link1) to find out about our future programs."
+                                           data-no-answer="true">
+                                </div>
+                                <div data-conv-fork="Admission_2_1">
+                                    <div data-conv-case="Admission_2_1_1">
+                                        <select data-conv-question="Are you willing to adapt to the program schedule? You can find the schedule here(Link2)"
+                                                name="Admission_2_1_1">
+                                            <option value="Admission_2_1_1_1">Yes</option>
+                                            <option value="Admission_2_1_1_2">No</option>
+                                        </select>
+                                    </div>
+                                    <div data-conv-case="Admission_2_1_2">
+                                        <input type="text" name="Admission_2_1_2"
+                                               data-conv-question="Hope to see you in another Up School Program. You can subscribe to our newsletter here(Link1) to find out about our future programs."
+                                               data-no-answer="true">
+                                    </div>
+                                </div>
+
+                                <div data-conv-fork="Admission_2_1_1">
+                                    <div data-conv-case="Admission_2_1_1_1">
+                                        <select data-conv-question="Do you have a personal computer and access to a fast and stable internet connection?"
+                                                name="Admission_2_1_1_1">
+                                            <option value="Admission_2_1_1_1_1">Yes</option>
+                                            <option value="Admission_2_1_1_1_2">No</option>
+                                        </select>
+                                    </div>
+                                    <div data-conv-case="Admission_2_1_1_2">
+                                        <input type="text" name="Admission_2_1_1_2"
+                                               data-conv-question="Hope to see you in another Up School Program. You can subscribe to our newsletter here(Link1) to find out about our future programs."
+                                               data-no-answer="true">
+                                    </div>
+                                </div>
+                                <div data-conv-fork="Admission_2_1_1_1">
+                                    <div data-conv-case="Admission_2_1_1_1_1">
+                                        <input data-conv-question="Great! We can't wait too meet you. Please drop your e-mail adress here so we can send you the application form."
+                        data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                        id="email" type="email" name="email" required placeholder="What's your e-mail?">
+                                        <input type="text" name="sfasf" data-conv-question="Thank you! Please check your inbox! Let us know if you don't receive an e-mail in 24 hours. You can reach us at info@upschool.io"
+                                               data-no-answer="true">
+
+                                    </div>
+                                    <div data-conv-case="Admission_2_1_1_1_2">
+                                        <input type="text" name="Admission_2_1_1_1_2"
+                                               data-conv-question="Hope to see you in another Up School Program. You can subscribe to our newsletter here(Link1) to find out about our future programs."
+                                               data-no-answer="true">
+                                    </div>
+
+                            </div>
+
+                        </div>
+                        <div data-conv-case="Admission_3">
+                            <input type="text" name="Admission_3"
+                                   data-conv-question="How can I prepare cevap"
+                                   data-no-answer="true">
+                        </div>
+                    </div>
+
+
+                        <div data-conv-case="Elu">
+                            <select data-conv-question="Please choose."
+                                    name="Elu">
+                                <option value="Elu_1">Will I be able to university</option>
+                                <option value="Elu_2">Will I be able to continiue</option>
+                            </select>
+                        </div>
+                        <div data-conv-fork="Elu">
+                            <div data-conv-case="Elu_1">
+                            <input type="text" name="Elu_1"
+                                   data-conv-question="Will I be able to university cevap"
+                                   data-no-answer="true">
+                        </div>
+                        <div data-conv-case="Elu_2">
+                            <input type="text" name="Elu_2"
+                                   data-conv-question="Will I be able to continiue cevap"
+                                   data-no-answer="true">
+                        </div>
+                    </div>
 
                     <div data-conv-case="Tuition">
                         <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
@@ -91,7 +265,7 @@
                         data-no-answer="true">
                     <input data-conv-question="Type in your e-mail"
                         data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                        id="email" type="email" name="email" required placeholder="What's your e-mail?">
+                        id="email1" type="email1" name="email1" required placeholder="What's your e-mail?">
                     <input data-conv-question="Now tell me a secret (like a password)" type="password"
                         data-minlength="6" id="senha" name="password" required placeholder="password">
                     <select
@@ -109,6 +283,7 @@
                         id="">
                         <option value="">Awesome!</option>
                     </select>
+        </div>
 
             </form>
         </div>
